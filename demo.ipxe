@@ -1,0 +1,6 @@
+#!ipxe
+
+echo "*** Demo iPxe ***"
+
+dhcp
+chain http://url-to-server:8080/boot.ipxe
