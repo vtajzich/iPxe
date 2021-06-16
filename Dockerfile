@@ -2,7 +2,7 @@ FROM ubuntu
 
 ENV PXE_FILE demo.ipxe
 
-RUN apt-get update && apt-get install -y git gcc binutils make perl mtools liblzma-dev mkisofs syslinux
+RUN apt-get update && apt-get install -y git gcc binutils make perl mtools liblzma-dev mkisofs syslinux isolinux
 
 RUN git clone git://git.ipxe.org/ipxe.git
 
